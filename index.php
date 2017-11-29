@@ -2,13 +2,11 @@
 
 $youtubeUrl = array_key_exists('youtube_url', $_REQUEST) ? $_REQUEST['youtube_url'] : null;
 $url = null;
-var_dump($youtubeUrl);
 if($youtubeUrl)
 {
     $params = parse_url($youtubeUrl, PHP_URL_QUERY);
     parse_str($params, $paramsAsArray);
     $videoId = $paramsAsArray['v'];
-    var_dump($videoId);
     $url = 'https://api.unblockvideos.com/youtube_downloader?&selector=mp4&redirect=true&id='.urlencode($videoId);
 }
 
