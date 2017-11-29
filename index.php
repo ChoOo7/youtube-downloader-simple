@@ -1,7 +1,8 @@
 <?php
 
 $youtubeUrl = array_key_exists('youtube_url', $_REQUEST) ? $_REQUEST['youtube_url'] : null;
-
+$url = null;
+var_dump($youtubeUrl);
 if($youtubeUrl)
 {
     $params = parse_url($youtubeUrl, PHP_URL_QUERY);
