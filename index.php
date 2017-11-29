@@ -33,7 +33,7 @@ if($youtubeUrl)
             <input type="text" name="youtube_url" placeholder="https://www.youtube.com/watch?v=ej-PDb4bQfc" style="width: 600px;"/>
         </label>
         <br />
-        <input type="submit" value="Valider">
+        <input type="submit" value="Valider" name="submit" />
     </div>
 </form>
 <?php if($url): ?>
