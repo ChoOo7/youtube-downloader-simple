@@ -29,8 +29,9 @@ if($youtubeUrl)
     <div>
         <label>
             Youtube video URL :
-            <input type="submit" name="youtube_url" placeholder="https://www.youtube.com/watch?v=ej-PDb4bQfc" />
+            <input type="text" name="youtube_url" placeholder="https://www.youtube.com/watch?v=ej-PDb4bQfc" style="width: 600px;"/>
         </label>
+        <br />
         <input type="submit" value="Valider">
     </div>
 </form>
